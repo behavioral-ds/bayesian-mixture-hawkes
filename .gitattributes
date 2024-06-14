@@ -1,0 +1,4 @@
+*.zip filter=lfs diff=lfs merge=lfs -text
+*_full.p filter=lfs diff=lfs merge=lfs -text
+.zip filter=lfs diff=lfs merge=lfs -text
+model_inference/bmhk_rnix/data/THETA_0x(m)_0y(t)_ATNIX_minE10_maxE50_maxC100_full.p filter=lfs diff=lfs merge=lfs -text
