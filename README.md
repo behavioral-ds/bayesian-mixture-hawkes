@@ -22,6 +22,8 @@ Each `model_inference/bmh*/` folder consists of the following folders:
 * `tracker_pred/`stores tracker files when running `run_bayesianpred.sh` on PBS
 * `metrics_mean/` and `preds_mean/`contain holdout likelihood and cascade size predictions for BMH-K and BMH-P, resp.
 
+Note that the data files in `bayesian-mixture-hawkes/model_inference/bmhk_cnix/data/`, `bayesian-mixture-hawkes/model_inference/bmhk_rnix/data/` and `bayesian-mixture-hawkes/model_inference/bmhp/data/` are clipped due to storage issues. Please adjust accordingly. Full datasets can be provided upon request.
+
 Pipeline to run inference and prediction:
 1. Compile the Stan models using `compile_models.py` .
 2. Run BMH fitting on data with `multiple_run_bayesianfit.sh`
